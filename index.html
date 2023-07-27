@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>files_720</title>
+    <style>
+        #move_on {
+            transition:all 250ms;
+            opacity: 0;
+        }
+
+        #content {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width:100vw;
+            height:100vh;
+            flex-direction: column;
+        }
+
+        img {
+            transition: all 250ms;
+        }
+
+        #display img {
+            opacity:0;
+        }
+    </style>
 </head>
 <body>
-    <p>hello world</p>
+    <main id="content">
+        <button type="button" onclick="roll_images();">Adventure awaits...</button>
+        <div id="display">
+            <img id="image_1" src="./numbers/set_1/0.png"/>
+            <img id="image_2" src="./numbers/set_2/0.png"/>
+            <img id="image_3" src="./numbers/set_3/0.png"/>
+        </div>
+        <button id="move_on" type="button" onclick="move_on();">Move on...</button>
+    </main>
+
+    <script>
+        function ri(min, max, prevOutput) { // random integer in range; min and max included 
+            let newOutput;
+            do {
+                newOutput = Math.floor(Math.random() * (max - min + 1) + min);
+            } while (newOutput === prevOutput);
+        
+            return newOutput;
+        }
+        const base="./numbers/set_";
+        function getnumber(set,number){
+            return url = base+set.toString()+"/"+number.toString()+".png";
+        }
+
+        const image_1=document.getElementById("image_1");
+        const image_2=document.getElementById("image_2");
+        const image_3=document.getElementById("image_3");
+
+        var im1_cur=0;
+        var im2_cur=0;
+        var im3_cur=0;
+
+        function randomize_images(){
+            im1_cur=ri(0,7,im1_cur);
+            im2_cur=ri(0,9,im2_cur);
+            im3_cur=ri(0,8,im3_cur);
+            image_1.src=getnumber(1,im1_cur)
+            image_2.src=getnumber(2,im2_cur)
+            image_3.src=getnumber(3,im3_cur)
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms || DEF_DELAY));
+        }
+
+        var amount;
+        var firsttime=true;
+        const move_on_button=document.getElementById("move_on");
+        async function roll_images(){
+            if (firsttime){
+                image_1.style.opacity="1";
+                await sleep(100);
+                image_2.style.opacity="1";
+                await sleep(100);
+                image_3.style.opacity="1";
+                firsttime=false
+                await sleep(250);
+            }
+            move_on_button.style.opacity="0";
+            amount=ri(10,25,0);
+            for (let i=0;i<amount;i++){
+                randomize_images();
+                await sleep(100+ri(-50,50,100)+(i*10));
+            }
+            await sleep(500);
+            move_on_button.style.opacity="1";
+        }
+        
+        function move_on(){
+            console.log((im1_cur * 10 * 9) + (im2_cur * 9) + im3_cur);
+            alert("not functional yet");
+        }
+    </script>
 </body>
 </html>
