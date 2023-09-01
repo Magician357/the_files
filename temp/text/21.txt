@@ -1,0 +1,4 @@
+I feel like there are better ways to sort things. Why does azzzzzzzzzzz go before zaaaaaaaaaaa, even though the latter has more letters that are closer to the beginning.
+To fix this, I have devised a new sorting algorithm or whatever.
+Instead of just going alphabetically, we take all the letters in a word, convert them to numbers (a-z is 1-26), sum those up, and rank the words by using that.
+I think that would be nice.
