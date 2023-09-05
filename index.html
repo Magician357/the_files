@@ -102,10 +102,11 @@
             await sleep(500);
             move_on_button.style.opacity="1";
         }
-        
+        var num;
         function move_on(){
-            console.log((im1_cur * 10 * 9) + (im2_cur * 9) + im3_cur);
-            alert("not functional yet");
+            num=(im1_cur * 10 * 9) + (im2_cur * 9) + im3_cur;
+            console.log(num);
+            alert("not functional yet\n"+num.toString());
         }
 
         window.mobileCheck = function() { /*complex regex to test if you are on mobile*/
