@@ -16,7 +16,7 @@ import os
 size = 0
 
 # assign folder path
-folders=["C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\images","C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\other","C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\text","C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\video"]
+folders=["C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\other","C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\text","C:\\Users\\zacha\\OneDrive\\Documents\\programms\\the_files\\temp\\video"]
 
 # get size
 for Folderpath in folders:
