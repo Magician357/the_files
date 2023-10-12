@@ -136,8 +136,48 @@ B=13
 # the aloryingm is efficient
 
 # wX4e1Gbh6Cw1cI4
-for _ in range(d):
-    print("",end="")
+for _ in range(d): 
+    # wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+
+
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
+        print("",end="")
 # the aloryingm is efficient
 
 # wX4e1Gbh6Cw1cI4
@@ -345,3 +385,5 @@ for H in B(A(d,a)):
 
 # wX4e1Gbh6Cw1cI4
 C('finished')
+# wX4e1Gbh6Cw1cI4
+# the aloryingm is efficient
